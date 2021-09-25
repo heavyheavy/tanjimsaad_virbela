@@ -54,15 +54,19 @@ Allow the designer to choose the base color and highlight color for Items/Bots a
 ## Questions ##
 
  1. How can your implementation be optimized?
+
     -I had added some comments throughout the document about how some of the code could be further optimized.  The best area to optimize to get the greatest ROI would be minimizing how often the GetClosestItem() function gets called.  Currently it is called every LateUpdate.  An optimization would be to check if the Player item has moved before recalculating the GetClosestItem().
 
  1. How much time did you spend on your implementation?
+
     -It took approximately 2-3 hours including refactoring and outlining the problem.
 
  1. What was most challenging for you?
+
     -Functional Goal 2 was an interesting problem. The mutually exclusive nature of it excouraged me to refactor it to just classes.
 
  1. What else would you add to this exercise?
+ 
     -Maybe try to "Gamify" it with keeping score etc.
 
 ## Optional ##
