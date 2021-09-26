@@ -4,20 +4,6 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 22
-  machineTargetBuild: 0
-  m_Monitors:
-    Main: 1
-    Main-Reference Width: 1920
-    Main-Reference Height: 1080
-    Top: 0
-    Top-Reference Width: 1920
-    Top-Reference Height: 1080
-    ButtonPanel: 0
-    ButtonPanel-Reference Width: 1920
-    ButtonPanel-Reference Height: 1080
-    Topper: 0
-    Topper-Reference Width: 1920
-    Topper-Reference Height: 1080
   productGUID: 2c9e7c9aeb57bc14c8a04d2f15ff6bb4
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
@@ -31,8 +17,8 @@ PlayerSettings:
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 0
-  m_ShowUnitySplashLogo: 0
+  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
   m_SplashScreenLogoStyle: 1
@@ -95,7 +81,6 @@ PlayerSettings:
   usePlayerLog: 1
   bakeCollisionMeshes: 0
   forceSingleInstance: 0
-  translucentWindowCompositing: 0
   useFlipModelSwapchain: 1
   resizableWindow: 0
   useMacAppStoreValidation: 0
@@ -160,7 +145,8 @@ PlayerSettings:
   resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Standalone: com.DefaultCompany.TanjimSaadVirbela
   buildNumber:
     Standalone: 0
     iPhone: 0

@@ -261,7 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfItems: 10
   itemPrefab: {fileID: 1209231609}
-  itemList: []
+  genericsList: []
 --- !u!1 &273418931
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,8 +616,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfItems: 10
-  botPrefab: {fileID: 3858581484388221902, guid: 1366539e5d18cc94593f95d60b25550f, type: 3}
-  botList: []
+  itemPrefab: {fileID: 3858581484388221902, guid: 1366539e5d18cc94593f95d60b25550f, type: 3}
+  genericsList: []
 --- !u!4 &875756115
 Transform:
   m_ObjectHideFlags: 0

@@ -23,8 +23,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         //Combine the bots list and the items list
-        combinedList.AddRange(itemController.itemList);
-        combinedList.AddRange(botsController.botList);
+        combinedList.AddRange(itemController.genericsList);
+        combinedList.AddRange(botsController.genericsList);
 
         //Get the closest item to the player object
         //and cache it in Start()
@@ -42,13 +42,13 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            var newItem = itemController.CreateNewItem();
+            var newItem = itemController.CreateNewGeneric();
             combinedList.Add(newItem);
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
-            var newBot = botsController.CreateNewBot();
+            var newBot = botsController.CreateNewGeneric();
             combinedList.Add(newBot);
         }
 
