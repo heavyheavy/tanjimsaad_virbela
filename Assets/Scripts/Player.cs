@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     private BotController botsController;
     
     //Used to keep track of the object that is currently "highlighted"
-    private Generic CurrentItemHighlighted;
+    private Generic currentItemHighlighted;
 
     //A list that keeps track of both of the items/bots in order to iterate through a single
     //list to get the closest object.
@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
         item.HighlightItem();
 
         //Keep track of the current highlighted item
-        CurrentItemHighlighted = item;
+        currentItemHighlighted = item;
     }
 
 
@@ -79,16 +79,16 @@ public class Player : MonoBehaviour
         //This can be done more elegantly with an event driven system with 
         //handlers and delegates etc
         //I am keeping it simple for the sake of it being just a homework assignment
-        if (closestItem != CurrentItemHighlighted && closestItem != null && CurrentItemHighlighted != null)
+        if (closestItem != currentItemHighlighted && closestItem != null && currentItemHighlighted != null)
             {
                 //change the old item to the default color
-                CurrentItemHighlighted.ResetItemColorToDefault();
+                currentItemHighlighted.ResetItemColorToDefault();
 
                 //change the new item to the highlighted color
                 closestItem.HighlightItem();
 
                 //update CurrentItemHighlighted to the new item highlighted
-                CurrentItemHighlighted = closestItem;
+                currentItemHighlighted = closestItem;
         }
     }
 
@@ -99,14 +99,14 @@ public class Player : MonoBehaviour
     private Generic GetClosestItem()
     {
         Generic closest = null;
-       
-        float ShortestDistance = Vector3.Distance(transform.position, combinedList[0].transform.position);
+        
+        float ShortestDistance =  Vector3.Distance(transform.position, combinedList[0].transform.position);
         
         //Loop through all objects and find closest
         foreach (var item in combinedList)
         {
             float Distance = Vector3.Distance(transform.position, item.transform.position);
-            if (Distance < ShortestDistance)
+            if (Distance <= ShortestDistance)
             {            
                 closest = item;
                 ShortestDistance = Distance;
